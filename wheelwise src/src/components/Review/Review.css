@@ -1,0 +1,100 @@
+
+
+/* In your Review.css file */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.review-box {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  /* Styling for the Reviews Container */
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Review Card Styling */
+  .review-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Profile Image/Placeholder Styling */
+  .review-profile {
+    margin-right: 20px; /* Space between profile and content */
+    margin-left:20px
+  }
+  
+  /* Profile Placeholder Styling */
+  .profile-placeholder {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+  }
+  
+  /* Review Content Styling */
+  .review-content {
+    flex-grow: 1;
+  }
+  
+  /* User Info Styling */
+  .review-user {
+    font-family: 'Roboto', sans-serif; /* Ensure Roboto font is applied */
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .review-comment {
+    font-family: 'Roboto', sans-serif; /* Ensure Roboto font is applied */
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #828080;
+    margin-right:15px
+  }
+  
+  .review-rating {
+    font-family: 'Roboto', sans-serif; /* Ensure Roboto font is applied */
+    display: flex;
+    gap: 4px;
+    color: #ffcc00;
+    font-size: 18px;
+  }
+  /* Adding Gap between Profile and Text */
+  .review-card .review-content {
+    margin-left: 10px; /* Creates a gap between the profile and text */
+    margin-right:15px
+  }
+
+.review-box h3 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 24px; 
+    font-weight: 600;
+    color: #0a2f4d; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+  }
+  

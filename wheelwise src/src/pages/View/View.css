@@ -1,0 +1,222 @@
+/* Global Styles */
+
+  
+  /* Confirmation Page */
+  .booking-confirmation {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .confirmation-title {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Layout Wrapper */
+  .confirmation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .car-details-box,
+  .booking-details-box {
+    width: 49%;
+  }
+  
+  @media (max-width: 768px) {
+    .confirmation-wrapper {
+      flex-direction: column;
+    }
+    .car-details-box,
+    .booking-details-box {
+      width: 100%;
+    }
+  }
+  
+  /* Section Heading */
+  .section-heading {
+    font-size: 24px;
+    color: #1b30a5;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #878f98;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  /* Car Details */
+  .car-details-content {
+    display: flex;
+    flex-direction: row-reverse; /* Ensures the car image is on the left */
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    gap: 5px; /* Adds space between image and text */
+  }
+  
+  .car-image {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+  
+   
+  }
+  
+  /* Adjust car details alignment */
+  .car-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    flex: 1; /* Makes sure the text occupies remaining space */
+  }
+  
+  .car-info p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
+  /* Dates and Icons */
+  .car-dates {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .car-dates span {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .car-dates .time-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #0a2139;
+  }
+  
+  /* Icons for car info */
+  
+  
+  /* Fare & Booking Details */
+  .fare-details-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .fare-details-box p,
+  .user-booking-details p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6; /* Better readability */
+  }
+  
+  .fare-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .fare-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .fare-row.total {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  
+  /* Confirm Booking Button */
+  .confirm-button-box {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .confirm-booking-btn {
+    background-color: #013ea6;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .confirm-booking-btn:hover {
+    background-color: #0e34bb;
+  }
+  /* New icon below the car image */
+  .car-info-icon-bottom {
+    display: flex;
+    justify-content: center; /* Center the icon */
+    align-items: center;
+    margin-top: 10px; /* Adds space between the image and icon */
+  }
+  
+  .car-info-icon-bottom svg {
+    font-size: 30px;
+    color: #00008b; /* Dark blue color */
+  }
+
+  
+  .down-arrow {
+    position: absolute;
+    top: calc(100vh - 80px);
+    left: calc(50% - 14px);
+    width: 4;
+    height: 30px;
+    border: 3px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 1.5s infinite;
+  }
+  
+  .down-arrow:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+  
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  

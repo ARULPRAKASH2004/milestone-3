@@ -1,0 +1,171 @@
+.home-page-unique {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.filters-section-unique {
+  width: 400px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.additional-filters-unique {
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 370px;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Reduced margin-bottom */
+}
+
+
+.additional-filters-unique div {
+  margin-bottom: 10px;
+}
+
+.additional-filters-unique label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.additional-filters-unique input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.additional-filters-unique select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.car-list-unique {
+  flex-grow: 0; /* Prevent stretching of cards */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  padding: 5px;
+  margin-top: 50px; /* Reduced margin-top */
+  margin-left: 0;
+  width: 80%;
+}
+
+.clear-filters-unique:hover {
+  background-color: #5d5959;
+}
+
+.brands-container-unique {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brands-column-unique {
+  width: 48%;
+}
+.price-range-container-unique select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.price-range-container-unique select:focus {
+  border-color: #4a90e2; 
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+.price-range-container-unique option {
+  padding: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #fbfbfb;
+}
+
+.price-range-container-unique select:hover {
+  border-color: #fffafa; /* Slight gray border on hover */
+}
+
+
+.price-range-container-unique select option:disabled {
+  background-color: #f5f5f5;
+  color: #bbb;
+}
+
+.car-list-unique {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 20px; 
+  padding: 5px;
+  margin-top: 170px; 
+  margin-left: 0;
+  width: 80%;
+  justify-items: center; 
+  align-items: start; 
+}
+
+.car-list-unique > :nth-child(n + 9) {
+  margin-left: 40px; 
+}
+
+
+.card-unique {
+  width: 300px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  margin: 0 auto;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.card-unique:hover {
+  transform: scale(1.05);
+}
+
+.clear-filters-unique {
+  display: flex;
+  align-items: center;
+  background-color: #5f5757; 
+  color: white; 
+  font-size: 12px; 
+  padding: 8px 16px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  gap: 10px; 
+}
+
+.clear-filters-unique:hover {
+  background-color: #a39898;
+  transform: scale(1.05); 
+}
+
+.clear-filters-unique:active {
+  background-color: #5f5959; 
+}
+
+.clear-filters-icon {
+  font-size: 18px;
+  margin-right: 8px; 
+}
+
+.clear-filters-unique:focus {
+  outline: none; 
+  
+}
